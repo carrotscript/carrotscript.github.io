@@ -11,3 +11,7 @@ textarea {
     border: none;
     line-height: normal;
 }
+
+h1 {
+    text-align: center;
+}
