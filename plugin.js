@@ -3,11 +3,8 @@
 // To do that, copy and paste this to your website's header:
 /*
   <script src="https://carrotscript.github.io/plugin.js"></script>
-  <script>
-  
-  </script>
 */
-// In the second script tag, type your CarrotScript!
+// Create another script tag at your body, and type your code in there.
 // Carrot On!
 
 var post;
