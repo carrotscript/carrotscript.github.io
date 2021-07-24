@@ -13,7 +13,7 @@ function post(name, data) {
   document.cookie = post;
 }
 
-function getCookie(cname) {
+function get(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -30,13 +30,13 @@ function getCookie(cname) {
 }
 
 function print(name) {
-  var print = getCookie(name);
+  var print = get(name);
   var btn = document.createElement("p");
   btn.innerHTML = print;
   document.body.appendChild(btn);
 }
 
 function replace(id, cookie) {
-  var change = getCookie(cookie);
+  var change = get(cookie);
   document.getElementById(id).innerHTML = change;
 }
