@@ -38,5 +38,5 @@ function print(name) {
 
 function replace(id, cookie) {
   var change = getCookie(cookie);
-  doument.getElementById(id).innerHTML = change;
+  document.getElementById(id).innerHTML = change;
 }
