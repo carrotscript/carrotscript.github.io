@@ -7,6 +7,9 @@
 // Create another script tag at your body, and type your code in there. (JavaSript will still work in the script tag)
 // Carrot On!
 
+
+console.warn("The CarrotScript Plugin has been added to this website. \n The website agrees to the Terms and Conditions \n Visit the Terms and Conditions at https://carrotscript.github.io/terms.");
+console.log("CarrotScript started...");
 var post;
 function post(name, data) {
   post = name + "=" + data;
@@ -40,3 +43,5 @@ function replace(id, cookie) {
   var change = get(cookie);
   document.getElementById(id).innerHTML = change;
 }
+
+console.log("CarrotScript finished...");
