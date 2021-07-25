@@ -29,3 +29,7 @@ h1 {
 .btn:hover {
     opacity: 1;
 }
+
+.all {
+    text-align: left;
+}
