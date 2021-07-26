@@ -43,18 +43,22 @@ function get(cname) {
 }
 
 function print(name) {
+  try {
   var print = get(name);
   var btn = document.createElement("p");
   btn.innerHTML = print;
   document.body.appendChild(btn);
+  }
   catch(err) {
    console.error("print(); error: " + err);
   }
 }
 
 function replace(id, cookie) {
+  try {
   var change = get(cookie);
   document.getElementById(id).innerHTML = change;
+  }
   catch(err) {
    console.error("replace(); error: " + err);
   }
