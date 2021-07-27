@@ -19,3 +19,8 @@ Then it loads all the commands. Then you can use CarrotScript like this at the e
 <!-- Type CarrotScript with JavaScript here-->
 </script>
 ```
+
+
+---
+
+© Greatly Gravitate 2021.
