@@ -1,4 +1,5 @@
 body {font-family: 'Source Sans Pro', Raleway, sans-serif;     text-align: center;}
+* {box-sizing: border-box}
 textarea {
     font-family: Consolas, monospace; 
     background-color: #ffffff;
