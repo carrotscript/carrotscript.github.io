@@ -22,10 +22,10 @@ function download_file(name, contents, mime_type) {
                 window.URL.revokeObjectURL(that.href);
             }, 1500);
         };
-
+        console.log(dlink.href);
         dlink.click();
         dlink.remove();
     }
-}
+
 
 // window.location.href = "https://carrotscript.github.io/open_file";
