@@ -7,9 +7,13 @@
 // Create another script tag at your body, and type your code in there. (JavaSript will still work in the script tag)
 // Carrot On!
 
+
+// Start CarrotScript Messages
 console.group("CarrotScript Messages");
 console.warn("The CarrotScript Plugin has been added to this website. \n The owner agrees to the Terms and Conditions \n Visit the Terms and Conditions at https://carrotscript.github.io/terms.");
 console.log("CarrotScript started...");
+
+// Post data
 var post;
 function post(name, data) {
   try {
@@ -21,6 +25,7 @@ function post(name, data) {
   }
 }
 
+// Get data
 function get(cname) {
   try {
   let name = cname + "=";
@@ -42,6 +47,7 @@ function get(cname) {
   }
 }
 
+// Print data
 function print(name) {
   try {
   var print = get(name);
@@ -54,6 +60,7 @@ function print(name) {
   }
 }
 
+// Replace Element
 function replace(id, cookie) {
   try {
   var change = get(cookie);
@@ -64,5 +71,6 @@ function replace(id, cookie) {
   }
 }
 
+// Finish CarrotScript
 console.log("CarrotScript finished...");
 console.groupEnd();
