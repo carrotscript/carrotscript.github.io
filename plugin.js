@@ -56,6 +56,6 @@ try {
   console.error(error);
 }
 console.log("Tests finished...");
-console.warn("Even though we said that this carrotscript is is looking fine to us, they may be problems.");
+console.warn("Even though we said that this carrotscript is looking fine to us, they may be problems.");
 console.log("CarrotScript finished...");
 console.groupEnd();
