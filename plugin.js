@@ -1,4 +1,8 @@
 // Welcome to CarrotScript!
+// You may ask, "what is this?"
+// This file contains all of CarrotScript Text v2.1
+// 
+//
 // CarrotScript is not automatically plugged in to your website. This file adds CarrotScript.
 // To do that, copy and paste this to your website's header:
 /*
@@ -8,26 +12,17 @@
 // Carrot On!
 
 
-// Start CarrotScript Messages
+
 console.group("CarrotScript Messages");
 console.warn("The CarrotScript Plugin has been added to this website. \n The owner agrees to the Terms and Conditions \n Visit the Terms and Conditions at https://carrotscript.github.io/terms.");
 console.log("CarrotScript started...");
-
-// Post data
+console.log("Loading functions..");
 var post;
 function post(name, data) {
-  try {
     post = name + "=" + data;
     document.cookie = post;
-  }
-  catch(err) {
-   console.error("post(); error: " + err);
-  }
 }
-
-// Get data
 function get(cname) {
-  try {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -41,36 +36,26 @@ function get(cname) {
     }
   }
   return "";
-  }
-  catch(err) {
-   console.error("get(); error: " + err);
-  }
 }
-
-// Print data
 function print(name) {
-  try {
   var print = get(name);
-  var btn = document.createElement("p");
+  var btn = document.createElement("code");
   btn.innerHTML = print;
   document.body.appendChild(btn);
-  }
-  catch(err) {
-   console.error("print(); error: " + err);
-  }
 }
-
-// Replace Element
 function replace(id, cookie) {
-  try {
   var change = get(cookie);
   document.getElementById(id).innerHTML = change;
-  }
-  catch(err) {
-   console.error("replace(); error: " + err);
-  }
 }
-
-// Finish CarrotScript
+console.log("Loaded funtions...");
+console.log("Starting tests...");
+try {
+  post("carrotscript", "hey");
+  var hey = get("carrotscript");
+} catch (error) {
+  console.error(error);
+}
+console.log("Tests finished...");
+console.warn("Even though we said that this carrotscript is is looking fine to us, they may be problems.");
 console.log("CarrotScript finished...");
 console.groupEnd();
