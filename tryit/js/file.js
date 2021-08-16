@@ -1,6 +1,5 @@
   $("#down").on('click', function (){
 	var blob = new Blob([document.getElementById("data").value], {type: "charset=utf-8"});
 	saveAs(blob, "project.carrotscript");
-	location.replace("https://carrotscript.github.io/tryit/upload");
   })
   // Above code is in jQuery
