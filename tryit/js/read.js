@@ -8,7 +8,7 @@ input.addEventListener('change', function (e) {
     data = reader.result;
     console.log(data);
     var script = document.createElement('script');
-    script.innerHTML = data;
+    script.innerHTML = '$.getscript("https://carrotscript.github.io/plugin.js", function() {' + data + '});';
     console.log(script);
     document.body.appendChild(script);
    }
