@@ -8,7 +8,6 @@ input.addEventListener('change', function (e) {
     data = reader.result;
     
    }
-})
   reader.readAsText(input.files[0])
 }, false)
     console.log(data);
