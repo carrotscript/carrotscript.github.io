@@ -18,11 +18,11 @@ console.warn("The CarrotScript Plugin has been added to this website. \n The own
 console.log("CarrotScript started...");
 console.log("Loading functions..");
 var post;
-function post(name, data) {
+export function post(name, data) {
     post = name + "=" + data;
     document.cookie = post;
 }
-function get(cname) {
+export function get(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -37,13 +37,13 @@ function get(cname) {
   }
   return "";
 }
-function print(name) {
+export function print(name) {
   var print = get(name);
   var btn = document.createElement("code");
   btn.innerHTML = print;
   document.body.appendChild(btn);
 }
-function replace(id, cookie) {
+export function replace(id, cookie) {
   var change = get(cookie);
   document.getElementById(id).innerHTML = change;
 }
