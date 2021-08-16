@@ -5,5 +5,5 @@ input.addEventListener('change', function (e) {
   reader.onload = function() {
     console.log(reader.result)
   }
-  reader.readAsTest(input.files[0])
+  reader.readAsText(input.files[0])
 }, false)
