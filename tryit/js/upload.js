@@ -6,12 +6,11 @@ input.addEventListener('change', function (e) {
   reader.onload = function() {
     console.log(reader.result)
     data = reader.result;
-    
-   }
-  reader.readAsText(input.files[0])
-}, false)
     console.log(data);
     var script = document.createElement('script');
     script.innerHTML = data;
     console.log(script);
     document.body.appendChild(script);
+   }
+  reader.readAsText(input.files[0])
+}, false)
