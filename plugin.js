@@ -17,9 +17,9 @@ console.group("CarrotScript Messages");
 console.warn("The CarrotScript Plugin has been added to this website. \n The owner agrees to the Terms and Conditions \n Visit the Terms and Conditions at https://carrotscript.github.io/terms.");
 console.log("CarrotScript started...");
 console.log("Loading functions..");
-var post;
+
 export function post(name, data) {
-    post = name + "=" + data;
+    var post = name + "=" + data;
     document.cookie = post;
 }
 export function get(cname) {
