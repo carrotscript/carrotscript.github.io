@@ -53,11 +53,15 @@ export function line() {
   var breakline = document.createElement("br");
   document.body.appendChild(breakline);
 }
+export function erase(cookie) {
+  document.cookie(cookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;");
+}
 console.log("Loaded funtions...");
 console.log("Starting tests...");
 try {
   post("carrotscript", "hey");
   var hey = get("carrotscript");
+  erase("carrotscript");
 } catch (error) {
   console.error(error);
 }
