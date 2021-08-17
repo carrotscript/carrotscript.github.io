@@ -54,7 +54,7 @@ export function line() {
   document.body.appendChild(breakline);
 }
 export function erase(cookie) {
-  document.cookie(cookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;");
+  document.cookie = cookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
 }
 console.log("Loaded funtions...");
 console.log("Starting tests...");
