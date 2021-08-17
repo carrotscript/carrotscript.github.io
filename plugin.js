@@ -1,6 +1,6 @@
 // Welcome to CarrotScript!
 // You may ask, "what is this?"
-// This file contains all of CarrotScript Text v2.1
+// This file contains all of CarrotScript Text v3.1
 // 
 //
 // CarrotScript is not automatically plugged in to your website. This file adds CarrotScript.
@@ -56,7 +56,12 @@ export function line() {
 export function erase(cookie) {
   document.cookie = cookie + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
 }
-console.log("Loaded funtions...");
+console.log("Adding information..");
+export const version = {
+  version: "v3.1",
+  name: "CarrotScript",
+  copyright: "Greatly Gravitate"
+}
 console.log("Starting tests...");
 try {
   post("carrotscript", "hey");
@@ -64,8 +69,8 @@ try {
   erase("carrotscript");
 } catch (error) {
   console.error(error);
+  debugger;
 }
-console.log("Tests finished...");
 console.warn("Even though we said that this carrotscript is looking fine to us, they may be problems.");
 console.log("CarrotScript finished...");
 console.groupEnd();
