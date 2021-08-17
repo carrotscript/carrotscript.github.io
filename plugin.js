@@ -4,11 +4,14 @@
 // 
 //
 // CarrotScript is not automatically plugged in to your website. This file adds CarrotScript.
-// To do that, copy and paste this to your website's header:
+// To do that, copy and paste this to your website's body:
 /*
-  <script src="https://carrotscript.github.io/plugin.js"></script>
+  <script type="module">
+    import * as carrotscript from https://carrotscript.github.io/plugin.js
+    //type commands here:
+  </script>
 */
-// Create another script tag at your body, and type your code in there. (JavaSript will still work in the script tag)
+// Type your code! (JavaSript will still work in the script tag)
 // Carrot On!
 
 
@@ -17,7 +20,6 @@ console.group("CarrotScript Messages");
 console.warn("The CarrotScript Plugin has been added to this website. \n The owner agrees to the Terms and Conditions \n Visit the Terms and Conditions at https://carrotscript.github.io/terms.");
 console.log("CarrotScript started...");
 console.log("Loading functions..");
-
 export function post(name, data) {
     var post = name + "=" + data;
     document.cookie = post;
