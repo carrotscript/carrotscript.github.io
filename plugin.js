@@ -49,6 +49,10 @@ export function replace(id, cookie) {
   var change = get(cookie);
   document.getElementById(id).innerHTML = change;
 }
+export function line() {
+  var breakline = document.createElement("br");
+  document.body.appendChild(breakline);
+}
 console.log("Loaded funtions...");
 console.log("Starting tests...");
 try {
