@@ -1,16 +1,12 @@
 const input = document.querySelector('input[type="file"]')
-var data
 input.addEventListener('change', function (e) {
   console.log(input.files)
   const reader = new FileReader()
   reader.onload = function() {
     console.log(reader.result)
-    data = reader.result;
-    console.log(data);
-    var script = document.createElement('script');
-    script.innerHTML = '$.getscript("https://carrotscript.github.io/plugin.js", function() {' + data + '});';
-    console.log(script);
-    document.body.appendChild(script);
+    var data = reader.result;
+    var run = document.createElement("script");
+    run.innerHTML = 'import * as carrotscript from "https://carrotscript.github.io/plugin.js";    ' + data;
    }
   reader.readAsText(input.files[0])
 }, false)
