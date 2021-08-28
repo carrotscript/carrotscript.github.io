@@ -7,7 +7,7 @@ commands = open("carrotscript.py", "w")
 commands.write("print('It works')")
 commands.close()
 
-alias = 'alias carrotscript="echo hello world"\n'
+alias = 'alias carrotscript="python3 carrotscriptterminal.py"\n'
 homefolder = os.path.expanduser('~')
 bashrc = os.path.abspath('%s/.bashrc' % homefolder)
 
