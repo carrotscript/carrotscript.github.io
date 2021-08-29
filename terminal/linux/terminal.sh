@@ -9,5 +9,5 @@ echo ""
 echo "Creating Terminal..."
 python3 download.py
 echo "Opening terminal... (Run carrotscript to pen terminal)"
-carrotscript
+python3 carrotscriptterminal.py
 source .bashrc
