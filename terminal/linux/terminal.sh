@@ -8,6 +8,15 @@ wget https://carrotscript.github.io/terminal/download.py
 echo ""
 echo "Creating Terminal..."
 python3 download.py
-echo "Opening terminal... (Run carrotscript to pen terminal)"
-python3 carrotscriptterminal.py
 source .bashrc
+echo "Removing non-nessasary files..."
+rm download.py
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "Opening terminal... (Run carrotscript to open terminal)"
+echo "Status: 200 OK"
+python3 carrotscriptterminal.py
