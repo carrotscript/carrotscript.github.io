@@ -1,6 +1,7 @@
 #!/bin/bash
-echo "Welcome to the CarrotScript Terminal vL.1.0. This is for Linux versions."
-sleep 1
+echo "Welcome to the CarrotScript Terminal vM.1.0. This is for Mac versions."
+echo "In 3 seconds, you should be given the downloading process."
+sleep 3
 echo "Downloading Terminal..."
 echo ""
 wget https://carrotscript.github.io/terminal/linux/carrotscriptterminal.py
