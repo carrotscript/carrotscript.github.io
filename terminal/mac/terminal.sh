@@ -8,7 +8,7 @@ wget https://carrotscript.github.io/terminal/mac/download.py
 echo ""
 echo "Creating Terminal..."
 python3 download.py
-source .bashrc
+source .bash_profile
 echo "Removing non-nessasary files..."
 rm download.py
 echo ""
