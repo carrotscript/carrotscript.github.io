@@ -15,3 +15,9 @@ if command == "localhost":
     print("Running...")
     from carrotscript import carrotscript
     
+if command == "exit()":
+    
+    
+else:
+    print("404: Command not  found")
+    command = input(">>> ")
