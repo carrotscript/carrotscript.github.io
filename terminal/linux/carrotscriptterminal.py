@@ -16,7 +16,7 @@ if command == "localhost":
     from carrotscript import carrotscript
     
 if command == "exit()":
-    
+    pass
     
 else:
     print("404: Command not  found")
