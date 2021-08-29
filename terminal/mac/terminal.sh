@@ -5,14 +5,18 @@ sleep 3
 echo "Downloading Terminal..."
 echo ""
 wget https://carrotscript.github.io/terminal/linux/carrotscriptterminal.py
+sleep 1
 echo ""
 echo "Downloading Terminal Interface"
 wget https://carrotscript.github.io/terminal/mac/download.py
+sleep 1
 echo ""
 echo "Creating Terminal..."
 python3 download.py
+sleep 1
 echo "Removing non-nessasary files..."
 rm download.py
+sleep 1
 echo ""
 echo ""
 echo ""
@@ -20,5 +24,5 @@ echo ""
 echo ""
 echo ""
 echo "Opening terminal... (Run carrotscript to open terminal)"
-echo "Status: 200 OK"
+sleep 1
 python3 carrotscriptterminal.py
