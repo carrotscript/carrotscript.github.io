@@ -7,7 +7,7 @@ echo "Downloading Terminal Interface"
 wget https://carrotscript.github.io/terminal/mac.py
 echo ""
 echo "Creating Terminal..."
-python3 download.py
+python3 mac.py
 echo "Opening terminal... (Run carrotscript to pen terminal)"
 carrotscript
 source .bash_profile
