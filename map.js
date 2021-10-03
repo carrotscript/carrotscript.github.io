@@ -15,4 +15,5 @@ const mapjs = {
         wazemap.innerHTML = '<iframe src="https://embed.waze.com/iframe?zoom=12&lat=' + lat +'&lon=' + long +'" width="' + width +'" height="' + heigth + '"></iframe>';
         document.body.appendChild(wazemap);
     }
+    
 };
