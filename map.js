@@ -1,5 +1,5 @@
 const mapjs = {
-	version: 0.2,
+	version: 1,
 	google: function(place, width, heigth) {
     	if (typeof width === 'undefined') { width = '600'; }
         if (typeof heigth === 'undefined') { heigth = '450'; }
