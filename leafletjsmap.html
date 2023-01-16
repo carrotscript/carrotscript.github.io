@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +44,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 <div id="map" style="width: 100%; height: 100%"></div>
 <script>
 // Leaflet - map.js iFrame
-if (params.lat != undefined || params.lat != null || params.long != undefined || params.long != null) {
+if (params.lat != undefined || params.long != undefined) {
 	const map = L.map('map').setView([params.lat, params.long], 13);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
