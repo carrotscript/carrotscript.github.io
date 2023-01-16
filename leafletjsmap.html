@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>map.js by arjunj132 - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+        #show {
+        	font-family: Arial;
+            margin: 8px;
+        }
+	</style>
+<script>
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+</script>
+	
+</head>
+<body>
+
+
+<div id="show" style="display: 'none'"><h1><span style="color: dodgerblue;">map.js</span> by arjunj132</h1><img src="https://github.com/arjunj132/arjunj132.github.io/blob/main/external/mapjs/Untitled%20design.gif?raw=true" width="100%"><br>Hi, you have reachead an error :(<br><br>If you are just viewing this page and have no idea what just happened, don't worry! Just contact the page owner.<br><br>If you are the owner, our map is lost while trying to find out sail where it should be.<br>Please just fix this by adding a latitude and longitude to this map.<br><br></div>
+<div id="map" style="width: 100%; height: 100%"></div>
+<script>
+// Leaflet - map.js iFrame
+if (params.lat != undefined || params.lat != null || params.long != undefined || params.long != null) {
+	const map = L.map('map').setView([params.lat, params.long], 13);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+var marker = L.marker([params.lat, params.long]).addTo(map);
+if (params.popup != undefined || params.popup != null){ marker.bindPopup(params.popup).openPopup();}
+} else {
+	document.getElementById('show').style.display = "block"
+    document.getElementById('map').style.display = "none"
+}
+</script>
+
+
+
+</body>
+</html>
